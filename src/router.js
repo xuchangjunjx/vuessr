@@ -12,15 +12,29 @@ export default function createRouter() {
             {
                 alias: '/',
                 path: '/home',
-                component: require('./routes/Home.vue')
+                component: require('./routes/Home.vue'),
+                meta:{
+                    title:'home',
+                    metas:{'keywords':'home-content','author':'xubowen'}
+
+                }
             },
             {
                 path: '/animal',
-                component: require('./routes/Animal.vue')
+                component: require('./routes/Animal.vue'),
+                meta:{
+                    title:'animal',
+                    metas:{'keywords':'keywords-content'}
+                }
             },
             {
                 path: '/people',
-                component: require('./routes/Person.vue')
+                component: require('./routes/Person.vue'),
+                meta:{
+                    title:'people',
+                    metas:{'keywords':'keywords-content'}
+
+                }
             }
         ]
     })

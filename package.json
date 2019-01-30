@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buiid:server": "webpack --config ./config/server.js",
+    "build:server": "webpack --config ./config/server.js",
     "build:client": "webpack --config ./config/client.js",
     "start": "node server"
   },
