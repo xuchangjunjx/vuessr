@@ -12,6 +12,7 @@ export default context => {
             if (!matchedComponents.length) {
               return reject({ code: 404 })
             }
+            //设置路由上的额外信息
             context.meta = router.currentRoute.meta;
 
              Promise.all(matchedComponents.map(Component => {
